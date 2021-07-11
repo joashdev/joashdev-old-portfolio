@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap');
+
+body {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	background-color: #ffffff;
+	font-family: 'Inter', sans-serif;
+}
+
+.container {
+	display: flex;
+	flex-direction: column;
+}
+
+header {
+	/*position: relative;*/
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0px 10%;
+	background-color: #24252a;
+	color: #fff;
+}
+
+header > .logo {
+	position: relative;
+	height: 45px;
+	/*background-color: #24252A;*/
+}
+
+header > li,
+a {
+	font-family: 'Montserrat', sans-serif;
+	/*font-weight: 900;*/
+	text-decoration: none;
+	font-size: 30px;
+	font-weight: bold;
+	color: #fff;
+}
+
+/*
+header > li,
+a {
+	text-decoration: none;
+	color: #ffffff;
+}*/
+
+.navLinks {
+	list-style: none;
+	display: grid;
+	grid-auto-flow: column;
+}
+
+.navLinks li {
+	display: inline-block;
+	padding: 0 20px;
+}
+
+.navLinks li a {
+	font-size: 16px;
+	transition: all 0.03s ease 0s;
+}
+
+.navLinks li a:hover {
+	color: #0088a9;
+}
+
+.nav-icons {
+	display: none;
+}
+
+footer {
+	justify-content: space-between;
+	align-items: center;
+	padding: 5px 10px;
+	background-color: #24252a;
+}
+
+/*.hidden {
+	display: none;
+}*/
+
+.active {
+	color: #0088a9;
+}
+
+@media screen and (max-width: 720px) {
+	header > nav {
+		background-color: rgba(36, 37, 42, 0.5);
+		position: fixed;
+		width: 50%;
+		height: 100vh;
+		right: 0;
+		top: 45px;
+		/*transform: translateY(100px);*/
+		transform: translateX(100%);
+		transition: all 0.05s ease 0s;
+	}
+	.navLinks {
+		z-index: 1;
+		grid-auto-flow: row;
+		justify-content: space-between;
+		text-align: center;
+	}
+
+	.navLinks li a:hover {
+		color: #0088a9;
+	}
+
+	.nav-icons {
+		display: flex;
+	}
+	.nav-icons svg {
+		color: #fff;
+		transition: linear all 0.5s;
+		cursor: pointer;
+	}
+
+	.nav-icons svg.hidden {
+		opacity: 0;
+	}
+
+	/*	.hidden {
+		display: flex;
+	}*/
+}
