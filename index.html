@@ -7,61 +7,242 @@
 			content="Checkout Kent Joash Zamudio's online CV"
 		/>
 		<meta name="author" content="Kent Joash Zamudio" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0"
+		/>
 		<link rel="stylesheet" href="style.css" />
-		<link rel="icon" href="ic-logo.svg" sizes="any" type="image/svg+xml" />
+		<link
+			rel="icon"
+			href="ic-logo.svg"
+			sizes="any"
+			type="image/svg+xml"
+		/>
 		<title>Kent Zamudio</title>
 	</head>
 	<body>
-		<noscript>Please enable JS to continue using this application.</noscript>
+		<noscript
+			>Please enable JS to continue using this application.</noscript
+		>
 
 		<div class="container">
-			<header>
-				<img class="logo" src="ic-logo.svg" />
-				<a href="#">kent joash</a>
-				<nav>
-					<ul class="navLinks">
-						<li><a href="#projects">projects</a></li>
-						<li><a href="#about">about</a></li>
-						<li><a href="#contact">contact</a></li>
-					</ul>
-				</nav>
-				<span class="nav-icons">
-					<svg
-						class="menu-collapse"
-						xmlns="http://www.w3.org/2000/svg"
-						height="24px"
-						viewBox="0 0 24 24"
-						width="24px"
-						fill="#FFFFFF"
-					>
-						<path d="M0 0h24v24H0z" fill="none" />
-						<path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z" />
-					</svg>
+			<div class="sticky-nav">
+				<header>
+					<img class="logo" src="ic-logo.svg" />
+					<a href="#">kent joash</a>
+					<nav>
+						<ul class="navLinks">
+							<li><a href="#projects">projects</a></li>
+							<li><a href="#about">about</a></li>
+							<li><a href="#contact">contact</a></li>
+						</ul>
+					</nav>
+					<span class="nav-icons">
+						<svg
+							class="menu-collapse"
+							xmlns="http://www.w3.org/2000/svg"
+							height="24px"
+							viewBox="0 0 24 24"
+							width="24px"
+							fill="#FFFFFF"
+						>
+							<path d="M0 0h24v24H0z" fill="none" />
+							<path
+								d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"
+							/>
+						</svg>
 
-					<svg
-						class="menu-shown hidden"
-						xmlns="http://www.w3.org/2000/svg"
-						height="24px"
-						viewBox="0 0 24 24"
-						width="24px"
-						fill="#FFFFFF"
-					>
-						<path d="M0 0h24v24H0z" fill="none" />
-						<path
-							d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"
-						/>
-					</svg>
-				</span>
-			</header>
+						<svg
+							class="menu-shown hidden"
+							xmlns="http://www.w3.org/2000/svg"
+							height="24px"
+							viewBox="0 0 24 24"
+							width="24px"
+							fill="#FFFFFF"
+						>
+							<path d="M0 0h24v24H0z" fill="none" />
+							<path
+								d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"
+							/>
+						</svg>
+					</span>
+				</header>
+			</div>
 			<div class="content">
 				<div id="home">
-					<section>
+					<img
+						class="dev-image"
+						src="dev-image2.png"
+						alt="picture of a handsome man"
+					/>
+					<div class="dev-intro">
 						<h1>Kent Joash A. Zamudio</h1>
 						<h4>Software Developer<br />Itemhound Corp.</h4>
-					</section>
+						<button>Let's talk</button>
+						<button
+							type="submit"
+							onclick="window.open('Resume-Zamudio-Kent-Joash.pdf')"
+						>
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								enable-background="new 0 0 24 24"
+								height="24px"
+								viewBox="0 0 24 24"
+								width="24px"
+								fill="#FFFFFF"
+							>
+								<g>
+									<rect
+										fill="none"
+										height="24"
+										width="24"
+									/>
+								</g>
+								<g>
+									<path
+										d="M18,15v3H6v-3H4v3c0,1.1,0.9,2,2,2h12c1.1,0,2-0.9,2-2v-3H18z M17,11l-1.41-1.41L13,12.17V4h-2v8.17L8.41,9.59L7,11l5,5 L17,11z"
+									/>
+								</g>
+							</svg>
+							My Resume
+						</button>
+					</div>
 				</div>
-				<div id="projects"></div>
+				<div id="projects">
+					<h1>#PROJECTS</h1>
+					<div class="cards">
+						<div>
+							<h4>Zest Productivity App</h4>
+							<img
+								src="zest-landing.png"
+								alt="Zest landing page"
+							/>
+							<p>
+								An online platform that aims to increase
+								productivity of students
+							</p>
+							<p>
+								Contributions: Authentication (Login and
+								Signup Pages)
+							</p>
+							<form target="_blank">
+								<button formaction="http://Zest.rf.gd">
+									View Live
+								</button>
+								<button
+									formaction="https://github.com/jvc1019/Zest"
+								>
+									<svg
+										xmlns="http://www.w3.org/2000/svg"
+										viewBox="0 0 28 28"
+									>
+										<path
+											d="M13.97 1.57c-7.03 0-12.733 5.703-12.733 12.74 0 5.622 3.636 10.393 8.717 12.084.637.13.87-.277.87-.615 0-.302-.013-1.103-.02-2.165-3.54.77-4.29-1.707-4.29-1.707-.578-1.473-1.413-1.863-1.413-1.863-1.154-.79.09-.775.09-.775 1.276.104 1.96 1.316 1.96 1.312 1.135 1.936 2.99 1.393 3.712 1.06.116-.823.445-1.384.81-1.704-2.83-.32-5.802-1.414-5.802-6.293 0-1.39.496-2.527 1.312-3.418-.132-.322-.57-1.617.123-3.37 0 0 1.07-.343 3.508 1.305 1.016-.282 2.105-.424 3.188-.43 1.082 0 2.167.156 3.198.44 2.43-1.65 3.498-1.307 3.498-1.307.695 1.754.258 3.043.13 3.37.815.903 1.314 2.038 1.314 3.43 0 4.893-2.978 5.97-5.814 6.286.458.388.876 1.16.876 2.358 0 1.703-.016 3.076-.016 3.482 0 .334.232.748.877.61 5.056-1.687 8.7-6.456 8.7-12.08-.055-7.058-5.75-12.757-12.792-12.75z"
+										/>
+									</svg>
+									View Code
+								</button>
+							</form>
+						</div>
+						<div>
+							<h4>TicTacToe</h4>
+							<img src="t3.png" alt="tictactoe image" />
+							<p>
+								A clone of the popular TicTacToe game
+								made with Angular framework
+							</p>
+							<p>Contributions: All</p>
+							<form target="_blank">
+								<button
+									formaction="https://tictactoe-794d9.web.app/"
+								>
+									View Live
+								</button>
+								<button
+									formaction="https://github.com/joashdev/tictactoe"
+								>
+									<svg
+										xmlns="http://www.w3.org/2000/svg"
+										viewBox="0 0 28 28"
+									>
+										<path
+											d="M13.97 1.57c-7.03 0-12.733 5.703-12.733 12.74 0 5.622 3.636 10.393 8.717 12.084.637.13.87-.277.87-.615 0-.302-.013-1.103-.02-2.165-3.54.77-4.29-1.707-4.29-1.707-.578-1.473-1.413-1.863-1.413-1.863-1.154-.79.09-.775.09-.775 1.276.104 1.96 1.316 1.96 1.312 1.135 1.936 2.99 1.393 3.712 1.06.116-.823.445-1.384.81-1.704-2.83-.32-5.802-1.414-5.802-6.293 0-1.39.496-2.527 1.312-3.418-.132-.322-.57-1.617.123-3.37 0 0 1.07-.343 3.508 1.305 1.016-.282 2.105-.424 3.188-.43 1.082 0 2.167.156 3.198.44 2.43-1.65 3.498-1.307 3.498-1.307.695 1.754.258 3.043.13 3.37.815.903 1.314 2.038 1.314 3.43 0 4.893-2.978 5.97-5.814 6.286.458.388.876 1.16.876 2.358 0 1.703-.016 3.076-.016 3.482 0 .334.232.748.877.61 5.056-1.687 8.7-6.456 8.7-12.08-.055-7.058-5.75-12.757-12.792-12.75z"
+										/>
+									</svg>
+									View Code
+								</button>
+							</form>
+						</div>
+						<div>
+							<h4>TodoList App</h4>
+							<img
+								src="todoList.png"
+								alt="todolist angular image"
+							/>
+							<p>
+								A Todo List application made with
+								Angular framework for listing and
+								monitoring Todos.
+							</p>
+							<p>Contributions: All</p>
+							<form target="_blank">
+								<button
+									formaction="https://https://joashdev.github.io/angular-todolistapp//"
+								>
+									View Live
+								</button>
+								<button
+									formaction="https://github.com/joashdev/angular-todolistapp"
+								>
+									<svg
+										xmlns="http://www.w3.org/2000/svg"
+										viewBox="0 0 28 28"
+									>
+										<path
+											d="M13.97 1.57c-7.03 0-12.733 5.703-12.733 12.74 0 5.622 3.636 10.393 8.717 12.084.637.13.87-.277.87-.615 0-.302-.013-1.103-.02-2.165-3.54.77-4.29-1.707-4.29-1.707-.578-1.473-1.413-1.863-1.413-1.863-1.154-.79.09-.775.09-.775 1.276.104 1.96 1.316 1.96 1.312 1.135 1.936 2.99 1.393 3.712 1.06.116-.823.445-1.384.81-1.704-2.83-.32-5.802-1.414-5.802-6.293 0-1.39.496-2.527 1.312-3.418-.132-.322-.57-1.617.123-3.37 0 0 1.07-.343 3.508 1.305 1.016-.282 2.105-.424 3.188-.43 1.082 0 2.167.156 3.198.44 2.43-1.65 3.498-1.307 3.498-1.307.695 1.754.258 3.043.13 3.37.815.903 1.314 2.038 1.314 3.43 0 4.893-2.978 5.97-5.814 6.286.458.388.876 1.16.876 2.358 0 1.703-.016 3.076-.016 3.482 0 .334.232.748.877.61 5.056-1.687 8.7-6.456 8.7-12.08-.055-7.058-5.75-12.757-12.792-12.75z"
+										/>
+									</svg>
+									View Code
+								</button>
+							</form>
+						</div>
+						<div>
+							<h4>Desktop Application Projects</h4>
+							<h5>Minecraft Clone</h5>
+							<form target="_blank">
+								<button
+									formaction="https://github.com/joashdev/angular-todolistapp"
+								>
+									<svg
+										xmlns="http://www.w3.org/2000/svg"
+										viewBox="0 0 28 28"
+									>
+										<path
+											d="M13.97 1.57c-7.03 0-12.733 5.703-12.733 12.74 0 5.622 3.636 10.393 8.717 12.084.637.13.87-.277.87-.615 0-.302-.013-1.103-.02-2.165-3.54.77-4.29-1.707-4.29-1.707-.578-1.473-1.413-1.863-1.413-1.863-1.154-.79.09-.775.09-.775 1.276.104 1.96 1.316 1.96 1.312 1.135 1.936 2.99 1.393 3.712 1.06.116-.823.445-1.384.81-1.704-2.83-.32-5.802-1.414-5.802-6.293 0-1.39.496-2.527 1.312-3.418-.132-.322-.57-1.617.123-3.37 0 0 1.07-.343 3.508 1.305 1.016-.282 2.105-.424 3.188-.43 1.082 0 2.167.156 3.198.44 2.43-1.65 3.498-1.307 3.498-1.307.695 1.754.258 3.043.13 3.37.815.903 1.314 2.038 1.314 3.43 0 4.893-2.978 5.97-5.814 6.286.458.388.876 1.16.876 2.358 0 1.703-.016 3.076-.016 3.482 0 .334.232.748.877.61 5.056-1.687 8.7-6.456 8.7-12.08-.055-7.058-5.75-12.757-12.792-12.75z"
+										/>
+									</svg>
+									View Code
+								</button>
+							</form>
+							<h5>2048 Clone</h5>
+							<form target="_blank">
+								<button
+									formaction="https://github.com/joashdev/angular-todolistapp"
+								>
+									<svg
+										xmlns="http://www.w3.org/2000/svg"
+										viewBox="0 0 28 28"
+									>
+										<path
+											d="M13.97 1.57c-7.03 0-12.733 5.703-12.733 12.74 0 5.622 3.636 10.393 8.717 12.084.637.13.87-.277.87-.615 0-.302-.013-1.103-.02-2.165-3.54.77-4.29-1.707-4.29-1.707-.578-1.473-1.413-1.863-1.413-1.863-1.154-.79.09-.775.09-.775 1.276.104 1.96 1.316 1.96 1.312 1.135 1.936 2.99 1.393 3.712 1.06.116-.823.445-1.384.81-1.704-2.83-.32-5.802-1.414-5.802-6.293 0-1.39.496-2.527 1.312-3.418-.132-.322-.57-1.617.123-3.37 0 0 1.07-.343 3.508 1.305 1.016-.282 2.105-.424 3.188-.43 1.082 0 2.167.156 3.198.44 2.43-1.65 3.498-1.307 3.498-1.307.695 1.754.258 3.043.13 3.37.815.903 1.314 2.038 1.314 3.43 0 4.893-2.978 5.97-5.814 6.286.458.388.876 1.16.876 2.358 0 1.703-.016 3.076-.016 3.482 0 .334.232.748.877.61 5.056-1.687 8.7-6.456 8.7-12.08-.055-7.058-5.75-12.757-12.792-12.75z"
+										/>
+									</svg>
+									View Code
+								</button>
+							</form>
+						</div>
+					</div>
+				</div>
 				<div id="about"></div>
 				<div id="contact"></div>
 			</div>
@@ -77,13 +258,13 @@
 		</div>
 	</body>
 	<script src="vanilla.js"></script>
-<!-- The core Firebase JS SDK is always required and must be listed first -->
-<script src="/__/firebase/8.7.1/firebase-app.js"></script>
+	<!-- The core Firebase JS SDK is always required and must be listed first -->
+	<script src="/__/firebase/8.7.1/firebase-app.js"></script>
 
-<!-- TODO: Add SDKs for Firebase products that you want to use
+	<!-- TODO: Add SDKs for Firebase products that you want to use
      https://firebase.google.com/docs/web/setup#available-libraries -->
-<script src="/__/firebase/8.7.1/firebase-analytics.js"></script>
+	<script src="/__/firebase/8.7.1/firebase-analytics.js"></script>
 
-<!-- Initialize Firebase -->
-<script src="/__/firebase/init.js"></script>
+	<!-- Initialize Firebase -->
+	<script src="/__/firebase/init.js"></script>
 </html>
